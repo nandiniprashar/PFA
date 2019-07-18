@@ -960,12 +960,12 @@ div.desc {
 
 .main_events
 {
-	margin:4% 0% 12% 0%;
+
 }
 
 .events h1
 {
-font-family: 'Indie Flower', cursive;
+font-family: 'Indie Flower',cursive;
 color:#16a085;
 text-align: center;
 font-size: 300%;
@@ -976,14 +976,14 @@ font-weight: 200%;
 {
 font-family: 'Indie Flower', cursive;
 align-content: center;
-font-size: 220%;
+font-size: 200%;
 }
 
 .events p
 {
 	font-family: "Lato", sans-serif;
 	color:white;
-	font-size: 150%;
+	font-size: 120%;
 }
 
 
@@ -993,14 +993,6 @@ font-size: 220%;
 	grid-template-columns: 50% 50%;
 }
 
-.container_events
-{
- 	box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
-	border-radius:10px;
-	margin:7%;
-	padding:3%;
-
-}
 
 .site_image
 {
@@ -1024,13 +1016,29 @@ font-size: 220%;
 	padding:5%;
 }
 
-.grid_container_events2{
-	display: grid;
-	grid-template-columns: 10% auto 10%;
-	margin-top: 3%;
-}
 
 .events hr{
 	color:;
 	width:80%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container > div {
+  margin: 3% 6%;
+  box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
+  border-radius:10px;
+  padding:3%;
+}
+
+.flex-container_1 {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container_1 > div {
+  box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
+  border-radius:10px;
+  padding:3%;
 }
