@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+  $("img").click(function(){
+    var div = $("#img1");
+    div.animate({height: '300px'}, "slow");
+    div.animate({width: '300px'}, "slow");
+  });
+});
+</script> 
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding:0% 2%;
+  }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <p style="font-size:4em;color:#ee2e31;">Exhibition Room</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img id="img1" src="images/p1.jpg" style="width:100%">
+    <img id="img2" src="images/p8.jpg" style="width:100%">
+    <img id="img3" src="images/p2.jpg" style="width:100%">
+   
+  </div>
+  
+  <div class="column">
+    <img src="images/p10.jpg" style="width:100%">
+    <img src="images/p7.jpg" style="width:100%">
+    <img src="images/p3.jpg" style="width:100%">
+    <img src="images/p17.jpg" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="images/p5.jpg" style="width:100%">
+    <img src="images/p6.jpg" style="width:100%">
+    <img src="images/p16.jpg" style="width:100%">    
+  </div>
+  
+  <div class="column">
+    <img src="images/p10.jpg" style="width:100%">
+    <img src="images/p13.jpg" style="width:100%">
+    <img src="images/p14.jpg" style="width:100%">
+    <img src="images/p11.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
