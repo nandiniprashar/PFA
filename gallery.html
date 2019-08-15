@@ -2,19 +2,19 @@
 <html>
 <head>
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script> 
-$(document).ready(function(){
-  $("img").click(function(){
-    var div = $("#img1");
-    div.animate({height: '300px'}, "slow");
-    div.animate({width: '300px'}, "slow");
-  });
-});
-</script> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+
 <style>
 
 * {
@@ -22,7 +22,7 @@ $(document).ready(function(){
 }
 
 body {
-  margin:5%;
+  margin:3%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -77,34 +77,59 @@ body {
 
 <!-- Photo Grid -->
 <div class="row"> 
+  
   <div class="column">
-    <img id="img1" src="images/p1.jpg" style="width:100%">
-    <img id="img2" src="images/p8.jpg" style="width:100%">
-    <img id="img3" src="images/p2.jpg" style="width:100%">
+    <img data-toggle="modal" data-target="#myModal" src="images/p1.jpg" onclick="show_details(this);" style="width:100%" data-box="1">
+    <img data-toggle="modal" data-target="#myModal" src="images/p8.jpg" onclick="show_details(this);" style="width:100%" data-box="8">
+    <img data-toggle="modal" data-target="#myModal" src="images/p2.jpg" onclick="show_details(this);" style="width:100%" data-box="2">
    
   </div>
   
   <div class="column">
-    <img src="images/p10.jpg" style="width:100%">
-    <img src="images/p7.jpg" style="width:100%">
-    <img src="images/p3.jpg" style="width:100%">
-    <img src="images/p17.jpg" style="width:100%">
+    <img data-toggle="modal" data-target="#myModal" src="images/p10.jpg" onclick="show_details(this);" style="width:100%" data-box="10">
+    <img data-toggle="modal" data-target="#myModal" src="images/p7.jpg" onclick="show_details(this);" style="width:100%" data-box="7">
+    <img data-toggle="modal" data-target="#myModal" src="images/p3.jpg" onclick="show_details(this);" style="width:100%" data-box="3">
+    <img data-toggle="modal" data-target="#myModal" src="images/p17.jpg" onclick="show_details(this);" style="width:100%" data-box="17">
   </div> 
    
   <div class="column">
-    <img src="images/p5.jpg" style="width:100%">
-    <img src="images/p6.jpg" style="width:100%">
-    <img src="images/p16.jpg" style="width:100%">    
+    <img data-toggle="modal" data-target="#myModal" src="images/p5.jpg" onclick="show_details(this);" style="width:100%" data-box="5">
+    <img data-toggle="modal" data-target="#myModal" src="images/p6.jpg" onclick="show_details(this);" style="width:100%" data-box="6">
+    <img data-toggle="modal" data-target="#myModal" src="images/p16.jpg" onclick="show_details(this);" style="width:100%" data-box="16">    
   </div>
   
   <div class="column">
-    <img src="images/p10.jpg" style="width:100%">
-    <img src="images/p13.jpg" style="width:100%">
-    <img src="images/p14.jpg" style="width:100%">
-    <img src="images/p11.jpg" style="width:100%">
+    <img data-toggle="modal" data-target="#myModal" src="images/p10.jpg" onclick="show_details(this);" style="width:100%" data-box="10">
+    <img data-toggle="modal" data-target="#myModal" src="images/p13.jpg" onclick="show_details(this);" style="width:100%" data-box="13">
+    <img data-toggle="modal" data-target="#myModal" src="images/p14.jpg" onclick="show_details(this);" style="width:100%" data-box="14">
+    <img data-toggle="modal" data-target="#myModal" src="images/p11.jpg" onclick="show_details(this);" style="width:100%" data-box="11">
   </div>
+
 </div>
+
+
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+           <img id="setImage" data-dismiss="modal" style="width:100%" >   
+        </div>
+        </div>
+      </div>
+    </div>
+ 
+
 
 </body>
 </html>
 
+<script type="text/javascript">
+  function show_details(image_name){
+    var details = image_name.getAttribute("data-box");
+    var name = "images/p" + details + ".jpg";
+    console.log(name);
+    document.getElementById("setImage").src = name;
+  }
+</script>
