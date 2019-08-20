@@ -2,25 +2,21 @@
 <html>
 <head>
 
-  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="main.css"/>
 <style> 
 
 .events .flex-container {
-    display: -webkit-flex;
-    display: flex;
-    background-color:;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
-	border-radius:7px;
-	  margin: 3%;
-	  padding: 2%;
+     border-radius: 10px;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0px 3px 8px rgba(0.3, 0.3, 0.3, 0.3);
+    margin: 5%;   
 }
 
 .events .flex-item {
-    width: 600px;
-    height: 300px;
-    margin:1%;
+    margin:2%;
+      padding:0% 5%;
 }
 
 .events h1
@@ -28,7 +24,7 @@
 color:#ee2e31;
 font-family:  "Lato", sans-serif;
 text-align: center;
-font-size: 60px;
+font-size: 50px;
 font-weight: bold;
 }
 
@@ -38,7 +34,7 @@ font-weight: bold;
 color:#ee2e31;
 font-family:  "Lato", sans-serif;
 align-content: center;
-font-size:40px ;
+font-size:35px ;
 }
 
 .events p
@@ -60,6 +56,28 @@ font-size:40px ;
   margin-bottom:5%;
 }
 
+
+  @media only screen and (max-width: 1000px) {
+
+      .flex-container{
+        margin:10%;
+        -webkit-justify-content: center;      
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        justify-content: center;
+        padding-top: 2%;
+      }
+    }
+@media only screen and (max-width: 1000px) {
+
+      .events p{
+       font-size: 30px;
+      }
+    }
+
+ 
+  
+
 </style>
 
 </head>
@@ -74,15 +92,13 @@ font-size:40px ;
  </div>
 <hr>
 
-
-
 <div class="flex-container">
   <div class="flex-item">
   	<h2>Photowalks</h2>
-    <p>Join our gleeful troops to capture some of the best memories and landscaped vistas. Visit exquisite sights with us to sieze the beauty of them. Explore ,travel and click!</p>
+    <p>Join our gleeful troopsbest memories and landscaped vistas. Visit exquisite sights with us to sieze the beauty of them. Explore ,travel and click!</p>
   </div>
-  <div class="flex-item" >
-  	 <img src="pic.jpg" heihgt="300" width="400" style="margin:3% 7%;">
+  <div class="flex-item" style="-webkit-justify-content: center;">
+  	 <img src="images/p15.jpg" heihgt="300" width="400">
   </div>
 </div>
 
@@ -92,7 +108,7 @@ font-size:40px ;
     <p>A warm welcome to the display of some of the most amazing artworks by our members. Stroll through the items of your attractions! Become a member and get a chance to unveil your talent to the world. </p>
   </div>
   <div class="flex-item" >
-  	 <img src="pic.jpg" heihgt="300" width="400" style="margin:3% 7%;">
+  	 <img src="images/p1.jpg" heihgt="300" width="400">
   </div>
 </div>
 
@@ -102,7 +118,7 @@ font-size:40px ;
     <p>Enroll yourself to engage in different discussions and activities. Enhance your artistic development with the knowledge shared by our skilled artists.</p>
   </div>
   <div class="flex-item" >
-  	 <img src="pic.jpg" heihgt="300" width="400" style="margin:3% 7%;">
+  	 <img src="images/p17.jpg" heihgt="300" width="400" >
   </div>
 </div>
 
@@ -119,7 +135,7 @@ font-size:40px ;
     <p>Have fun getting clicked the most insane and memorable pictures with your friends!</p>
   </div>
   <div class="flex-item" >
-     <img src="pic.jpg" heihgt="300" width="400" style="margin:3% 7%;">
+     <img src="images/p5.jpg" heihgt="300" width="400" >
   </div>
 </div>
 
@@ -129,7 +145,7 @@ font-size:40px ;
     <p>Enjoy the free style live concerts and stand up comedies put up by the young talents!</p>
   </div>
   <div class="flex-item" >
-     <img src="pic.jpg" heihgt="300" width="400" style="margin:3% 7%;">
+     <img src="images/p7.jpg" heihgt="300" width="400" >
   </div>
 </div>
 
@@ -139,7 +155,7 @@ font-size:40px ;
     <p>Let out your inner expressoins by spraying and painting your creativity to the world.</p>
   </div>
   <div class="flex-item" >
-     <img src="pic.jpg" heihgt="300" width="400" style="margin:3% 7%;">
+     <img src="images/p16.jpg" heihgt="300" width="400" >
   </div>
 </div>
 
@@ -149,7 +165,7 @@ font-size:40px ;
     <p>Express yourself in your own unique way and create aesthetically pleasing works to be diplayed in the exhibition!</p>
   </div>
   <div class="flex-item" >
-     <img src="pic.jpg" heihgt="300" width="400" style="margin:3% 7%;">
+     <img src="images/p14.jpg" heihgt="300" width="400" >
   </div>
 </div>
 
