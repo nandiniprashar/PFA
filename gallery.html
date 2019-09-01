@@ -13,6 +13,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <style>
@@ -22,7 +24,7 @@
 }
 
 body {
-  margin:3%;
+  margin:0%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -34,6 +36,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin:0% 3% 4% 3%;
   padding: 0 4px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
 }
@@ -51,7 +54,7 @@ body {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .column {
     flex: 50%;
     max-width: 50%;
@@ -59,7 +62,7 @@ body {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .column {
     flex: 100%;
     max-width: 100%;
@@ -70,9 +73,29 @@ body {
 
 <body>
 
+
+ 
+<header id="header" style="background-color:black;opacity:0.9">
+        <div class="inner">
+          <a href="index.html" class="logo">PFA</a>
+          <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="#one">About</a>
+            <a href="#two">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+      <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+
+
+
+
 <!-- Header -->
 <div class="header">
-  <p style="font-size:4em;color:#ee2e31;">Exhibition Room</p>
+  <p style="font-size:3em; margin: 1%;color:#ee2e31;">Exhibition Room</p>
 </div>
 
 <!-- Photo Grid -->
@@ -120,6 +143,37 @@ body {
       </div>
     </div>
  
+
+
+
+<section id="footer">
+        <div class="inner">
+          <header>
+            <h2 style="text-align: center">Contact Details</h2>
+          </header>
+          
+          <div class="copyright">
+
+            <div class="content" style="text-align: auto">
+              <p>Society Head: Varmeet Singh<br>
+                Phone No.: 9988776655<br>
+              Email id: varmeetsingh@gmail.com</p>
+            </div>
+            <ul class="actions" style="text-align: center">
+            <li><a href="#" class="reg">Register as a member</a></li>
+          </ul>
+
+
+            <ul class="icons" style="text-align:center;font-size:200%">       
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>     
+            </ul>
+            &copy; Photography & Fine Arts Club
+          </div>
+        </div>
+      </section>
+
 
 
 </body>
