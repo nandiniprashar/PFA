@@ -11,17 +11,17 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 	
 .sidenav {
-	background-color:#e5474b;
+	background-color:#E5474B;
 	height: 100%;
-  width:60px;
+  width:47px;
   position: fixed;
-  top: 0;
+  top: 0; 
   left: 0;
 }
 
 .sidenav a {
 	
-	margin:60% 20%;
+	margin:60% 12%;
 	padding: 20px 0px;
 	opacity:1;
   text-decoration: none;
@@ -36,12 +36,12 @@
 .flex-container1 {
   display: flex;
   justify-content: center;
-  background-color:#AA4444;
-  margin:0% 10% 1% 10%;
+  background-color:#E5474B;
+  margin:0% 7% 1% 7%;
   font-family:  "Lato", sans-serif;
   font-weight: bold;
   color:white;
-  padding: 2%;
+  padding:18px;
   border-radius:5px;
    box-shadow: 5px 10px 18px #888888;	
 }
@@ -49,7 +49,7 @@
 ul li{
   display:inline-block;
   background-color:;
-  margin:2% 10% 0% 10%;
+  margin:2% 7% 0% 7%;
   padding: 0px;
   font-family:  "Lato", sans-serif;
   font-weight: bold;
@@ -60,7 +60,7 @@ ul li{
 .flex-container2 {
   display: flex;
   justify-content:space-around;
-  margin:2% 10%;
+  margin:3% 10%;
   font-family:  "Lato", sans-serif;
   color:white;
   
@@ -68,11 +68,10 @@ ul li{
 
 .flex-item2 {
 
-  background-color:#e5474b;
+  background-color:#06A77D;
    box-shadow: 5px 10px 18px #888888;
-   border-left: 7px solid;
-   border-left-color:#AA4444;
-   padding:15px 20px 5px 20px;
+   padding:8px 15px 0px 15px;
+   border-radius: 5px;
 }
 
 .flex-container4 {
@@ -89,7 +88,9 @@ ul li{
 
 a{
 	text-decoration: none !important;
+		color:white;
 }
+
  @media only screen and (max-width: 500px) {
 
       .flex-container2{
@@ -103,12 +104,13 @@ a{
       	margin: 5% 0%;
       }
   }
-  a{
-  	color:white;
-  	
-  }
- 
+
+
+.flex-item4 img{
+	padding-top:2px;
 }
+
+
 </style>
 
 </head>
@@ -121,12 +123,12 @@ a{
 	<a href="#about"><img src="images/admin.png"></a>	
   <a href="#about"><img src="images/home-sign.png"></a>
   <a href="#services"><img src="images/forms.png"></a>
-   <a href="#about"><img src="images/image.png"></a>
+   <a href="#about"><img src="images/flyer.png"></a>
   
 </div>
 
 
-<div style="margin-left:60px;">
+<div style="margin-left:47px;">
 
 
 <ul style="padding: 0px;margin: 0px;">
@@ -147,15 +149,12 @@ a{
 </div>
 
 
-
-
-
 <div class="flex-container2">
 
 	<div class="flex-item2">
 		<div class="flex-container4">	
-		<div class="flex-item4"><img src="images/flyer.png"></div>
-		<div class="flex-item4">	<a href="#"><p style="margin-bottom: 0%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POST FLYER</p></div>
+		<div class="flex-item4"><img src="images/image.png"></div>
+		<div class="flex-item4">	<a href=addimage.html target="Framename"><p style="margin-bottom: 0%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMAGE UPLOAD</p></div>
 		</a>
 		</div>
 	</div>
@@ -163,7 +162,7 @@ a{
 	<div class="flex-item2">			
 		<div class="flex-container4">	
 		<div class="flex-item4"><img src="images/list.png"></div>
-		<div class="flex-item4">		<a href="#"><p style="margin-bottom: 0%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EVENT LIST</p></div>
+		<div class="flex-item4">	<a href=generate.html target="Framename"><p style="margin-bottom: 0%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EVENT ORGANISER</p></div>
 		</a>
 		</div>
 	</div>
@@ -171,7 +170,7 @@ a{
 	<div class="flex-item2">	
 		<div class="flex-container4">	
 		<div class="flex-item4"><img src="images/gform.png"></div>
-		<div class="flex-item4">	<a href=generate.html target="Framename"><p style="margin-bottom: 0%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GENERATE</p></div>
+		<div class="flex-item4">	<a href=registration.html target="Framename"><p style="margin-bottom: 0%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REGISTER</p></div>
 		</a>
 	</div>
 	</div>
@@ -180,7 +179,7 @@ a{
 
 
 <div>
-	<iframe style=""  width="100%" height="800" frameborder="0" allowfullscreen sandbox name="Framename">
+	<iframe style="margin-top: 2%;"  width="100%" height="800" frameborder="0" allowfullscreen sandbox name="Framename">
 	</iframe>
 </div>
 
